@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Bao/">
+    <file alias="Main.qml">/home/csociety/CISociety/Qt/Projects/Bao/Main.qml</file>
+  </qresource>
+</RCC>
+

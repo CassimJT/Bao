@@ -1,0 +1,14 @@
+-rootPath
+/home/csociety/CISociety/Qt/Projects/Bao
+-cmake-output
+-output-file
+/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug/.qt/qml_imports/appBao_conf.cmake
+-importPath
+/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug
+-importPath
+/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug/Bao
+-importPath
+/opt/Qt/6.11.0/gcc_64/qml
+-qrcFiles
+/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug/.qt/rcc/qmake_Bao.qrc
+/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug/.qt/rcc/appBao_raw_qml_0.qrc
