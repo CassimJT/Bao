@@ -1,0 +1,61 @@
+# Build directories
+build/
+build-*/
+*-build/
+*-Build/
+
+# Qt Creator user files
+*.user
+*.user.*
+*.creator
+*.creator.user
+*.creator.user.*
+*.autosave
+*.config
+
+# CMake build files
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeUserPresets.json
+
+# Compiled object files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+
+# Qt specific
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+*.qmltypes
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Binary executables
+Bao
+*.exe
+*.app
+
+# Debug/Release folders
+debug/
+release/
+Debug/
+Release/
