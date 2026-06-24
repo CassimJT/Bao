@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Bao">
-    <file alias="qmldir">/home/csociety/CISociety/Qt/Projects/Bao/build/Desktop_Qt_6_11_0_Debug/Bao/qmldir</file>
-  </qresource>
-</RCC>
-

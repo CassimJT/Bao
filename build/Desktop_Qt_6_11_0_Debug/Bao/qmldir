@@ -1,6 +1,0 @@
-module Bao
-typeinfo appBao.qmltypes
-prefer :/qt/qml/Bao/
-Main 254.0 Main.qml
-depends QtQuick
-

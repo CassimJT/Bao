@@ -1,0 +1,138 @@
+@startuml
+title Bawo Engine Architecture (Final - Full Spec + Signals + Tournament Ready)
+
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+enum MatchState {
+  Waiting
+  InProgress
+  Paused
+  Finished
+}
+
+enum PlayerType {
+  Local
+  AI
+  Remote
+}
+
+enum Direction {
+  Left
+  Right
+}
+
+enum AIDifficulty {
+  Easy
+  Medium
+  Hard
+}
+
+enum GamePhase {
+  Setup
+  TrapPhase
+  DefensePhase
+  MatchPhase
+  EndGame
+}
+
+enum TournamentState {
+  Created
+  Running
+  Finished
+}
+
+enum PurchaseType {
+  SpecialMove
+  SeedStyle
+  BoardStyle
+}
+
+enum GameType {
+  House
+  FreeMatching
+}
+
+class Move
+class MoveResult
+class MatchSettings
+class Pit
+class Board
+class GameState
+abstract class RuleSet
+class HouseRuleSet
+class FreeMatchingRuleSet
+class PhaseTransitionRule
+class TargRule
+class BawoRulesEngine
+abstract class Player
+class LocalPlayer
+class AIPlayer
+class RemotePlayer
+class BoardEvaluator
+class MatchController
+abstract class NetworkSession
+class LANSession
+class OnlineSession
+class UndoManager
+class GameStateSerializer
+class TournamentController
+class TournamentMatch
+class TournamentBracket
+class TournamentRules
+class Team
+class IAPManager
+class SeedStyle
+class BoardStyle
+class StyleManager
+class AdsManager
+class MatchViewModel
+class TournamentViewModel
+class StoreViewModel
+class GameTypeSelectorViewModel
+
+RuleSet <|-- HouseRuleSet
+RuleSet <|-- FreeMatchingRuleSet
+Player <|-- LocalPlayer
+Player <|-- AIPlayer
+Player <|-- RemotePlayer
+NetworkSession <|-- LANSession
+NetworkSession <|-- OnlineSession
+
+GameState *-- Board
+Board *-- Pit
+MatchController --> GameState
+MatchController --> BawoRulesEngine
+MatchController --> Player
+MatchController --> MatchSettings
+BawoRulesEngine --> Move
+BawoRulesEngine --> MoveResult
+BawoRulesEngine --> RuleSet
+BawoRulesEngine --> PhaseTransitionRule
+BawoRulesEngine --> TargRule
+RemotePlayer --> NetworkSession
+AIPlayer --> BoardEvaluator
+UndoManager --> Move
+UndoManager --> GameState
+GameStateSerializer --> GameState
+TournamentController --> TournamentMatch
+TournamentController --> TournamentBracket
+TournamentController --> TournamentRules
+TournamentController --> Team
+TournamentMatch --> MatchController
+IAPManager --> AdsManager
+StyleManager --> SeedStyle
+StyleManager --> BoardStyle
+MatchViewModel --> MatchController
+MatchViewModel --> StyleManager
+TournamentViewModel --> TournamentController
+StoreViewModel --> IAPManager
+StoreViewModel --> StyleManager
+
+MatchSettings --> GameType
+GameState --> GameType
+RuleSet --> GameType
+TournamentController --> GameType
+TournamentMatch --> GameType
+
+@enduml

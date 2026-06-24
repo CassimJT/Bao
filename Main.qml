@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Controls.Basic
-
+import QtQuick.Controls
 
 ApplicationWindow {
     id: window
@@ -16,5 +15,9 @@ ApplicationWindow {
     property color dark: "#262626"
     property color reallyLight: "#e7e7e7"
     property color light: "#e0e0e0"
+
+    BusyIndicator {
+        anchors.centerIn: parent
+    }
 
 }
