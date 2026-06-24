@@ -14,7 +14,7 @@ Current layers:
 - `monetization`: purchase, ads, and style management shells.
 - `viewmodels`: QML-facing view-model shells.
 
-#Business Logic Architecture
+# Business Logic Architecture
 
   
   ├── src/
