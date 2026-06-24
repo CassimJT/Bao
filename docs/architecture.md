@@ -15,6 +15,7 @@ Current layers:
 - `viewmodels`: QML-facing view-model shells.
 
 ## Business Logic Architecture
+
 ├── src/
 │ ├── core/
 │ │ ├── enums/
@@ -145,6 +146,7 @@ Current layers:
 │
 
 ## UI Architecture
+
 Ui/
 ├── components/ # Reusable UI components
 │ ├── buttons/
